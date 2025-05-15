@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #0f1117;
+  font-family: 'Fira Code', monospace;
+  color: #00ff9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(#00ff9f11 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.terminal {
+  background-color: #1e1e2e;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 25px #00ff9f33;
+}
+
+.terminal-header {
+  background: #2c2c3b;
+  padding: 0.5rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+  color: #aaa;
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.terminal-body {
+  padding: 2rem;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.info {
+  color: #87cefa;
+}
+
+.prompt {
+  color: #888;
+}
+
+a {
+  color: #00eaff;
+  text-decoration: underline;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+.content-with-gif {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+pre {
+  flex: 1;
+}
+
+.gif-box {
+  width: 200px;
+  height: 201px;
+  border-radius: 200px;
+  overflow: hidden;
+  box-shadow: 0 0 100px #00ff9f44;
+  flex-shrink: 0;
+}
+
+.gif-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
